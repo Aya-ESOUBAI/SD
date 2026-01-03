@@ -1,6 +1,7 @@
 public class MainServer {
-    public static void main(String[] args) {
-        NetworkServer server = new NetworkServer(5000);
-        server.start();
+   public static void main(String[] args) {
+        Node nodeA = new Node(1, "localhost", 5000);
+        nodeA.startNode();         
+        System.out.println("Test de la Semaine 2 lancé...");
     }
 }
