@@ -1,7 +1,6 @@
 import java.util.concurrent.BlockingQueue;
-
 public class ProcessorThread extends Thread {
-    private BlockingQueue<Message> queue;
+    private final BlockingQueue<Message> queue;
 
     public ProcessorThread(BlockingQueue<Message> queue) {
         this.queue = queue;

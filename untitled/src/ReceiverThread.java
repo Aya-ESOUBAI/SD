@@ -3,8 +3,8 @@ import java.net.*;
 import java.util.concurrent.BlockingQueue;
 
 public class ReceiverThread extends Thread {
-    private int port;
-    private BlockingQueue<Message> queue;
+    private final int port;
+    private final BlockingQueue<Message> queue;
 
     public ReceiverThread(int port, BlockingQueue<Message> queue) {
         this.port = port;

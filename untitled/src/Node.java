@@ -2,10 +2,10 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Node {
-    private int id;
-    private String ip;
-    private int port;
-    private BlockingQueue<Message> queue = new LinkedBlockingQueue<>();
+    private final int id;
+    private final String ip;
+    private final int port;
+    private final BlockingQueue<Message> queue = new LinkedBlockingQueue<>();
 
     public Node(int id, String ip, int port) {
         this.id = id;

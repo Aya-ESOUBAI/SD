@@ -4,7 +4,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class NetworkServer {
-    private int port;
+    private final int port;
 
     public NetworkServer(int port) {
         this.port = port;
